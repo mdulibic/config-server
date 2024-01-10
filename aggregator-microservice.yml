@@ -1,0 +1,12 @@
+# aggregator-microservice.yml
+server:
+  port: 8002
+temperature:
+  unit: K
+microservices:
+  humidity: humidity-microservice
+  temperature: temperature-microservice
+
+
+
+
