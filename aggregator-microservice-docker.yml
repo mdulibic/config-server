@@ -1,12 +1,13 @@
-# aggregator-microservice.yml
 server:
   port: 8002
 temperature:
-  unit: C
+  unit: K
 microservices:
   humidity: humidity-microservice
   temperature: temperature-microservice
 
 
-
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
